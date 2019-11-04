@@ -1,0 +1,103 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.Quote {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Anonymous Pro", monospace;
+  border-radius: 5px;
+  margin-top: 10%;
+  width: 40%;
+  min-height: 40vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Head {
+  border-radius: 5px 5px 0 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 30px;
+}
+
+.icon {
+  width: 28px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.icon-button {
+  width: 20px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.Text {
+  font-size: 22px;
+  margin: 20px;
+  text-align: justify;
+}
+
+.Author {
+  text-align: right;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.Buttons {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.link-tweet {
+}
+
+.Button {
+  border: none;
+  border-radius: 0px;
+}
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
